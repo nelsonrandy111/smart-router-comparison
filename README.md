@@ -1,4 +1,4 @@
-﻿# Smart, Cost-Aware LLM Router
+﻿# Smart Cost-Aware LLM Router
 
 A local, benchmark-driven toolkit for smart, policy-based routing across local LLMs (Ollama). It includes a production-style router (policies, circuit breaker, telemetry), an extensible provider layer, and a benchmark suite with quick and comprehensive modes.
 
