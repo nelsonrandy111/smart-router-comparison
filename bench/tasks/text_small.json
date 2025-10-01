@@ -1,0 +1,5 @@
+[
+  { "prompt": "Reply to: Thanks!", "minChars": 10 },
+  { "prompt": "Quick note: meeting moved to 2pm.", "minChars": 20 },
+  { "prompt": "Write a friendly tweet about clean energy.", "minChars": 40 }
+]

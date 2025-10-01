@@ -1,0 +1,235 @@
+{
+  "mode": "smart",
+  "summary": {
+    "TEXT_SMALL": {
+      "count": 3,
+      "successRate": 1,
+      "jsonValidityRate": 0,
+      "meanLatency": 25945.666666666668,
+      "p95Latency": 26694,
+      "totalCostUSD": 0.00000648083755305228,
+      "meanCostUSD": 0.00000216027918435076,
+      "costPerProvider": {
+        "ollama-phi3-mini": 0.00000648083755305228
+      }
+    },
+    "TEXT_LARGE": {
+      "count": 2,
+      "successRate": 0,
+      "jsonValidityRate": 0,
+      "meanLatency": 328844,
+      "p95Latency": 57642,
+      "totalCostUSD": 0.00000633208330327427,
+      "meanCostUSD": 0.00000633208330327427,
+      "costPerProvider": {
+        "ollama-llama3-8b": 0.00000633208330327427
+      }
+    },
+    "OBJECT_SMALL": {
+      "count": 2,
+      "successRate": 0.5,
+      "jsonValidityRate": 0.5,
+      "meanLatency": 20036.5,
+      "p95Latency": 16917,
+      "totalCostUSD": 0.0000080966087773553,
+      "meanCostUSD": 0.00000404830438867765,
+      "costPerProvider": {
+        "ollama-llama3-8b": 0.0000080966087773553
+      }
+    },
+    "OBJECT_LARGE": {
+      "count": 2,
+      "successRate": 0,
+      "jsonValidityRate": 0,
+      "meanLatency": 137000.5,
+      "p95Latency": 112274,
+      "totalCostUSD": 0.000010105539152527896,
+      "meanCostUSD": 0.000005052769576263948,
+      "costPerProvider": {
+        "ollama-llama3-8b": 0.000010105539152527896
+      }
+    },
+    "TEXT_EMBEDDING": {
+      "count": 3,
+      "successRate": 1,
+      "jsonValidityRate": 0,
+      "meanLatency": 2815.3333333333335,
+      "p95Latency": 3145,
+      "meanCostUSD": null
+    }
+  },
+  "total": {
+    "count": 12,
+    "successRate": 0.5833333333333334,
+    "jsonValidityRate": 0.08333333333333333,
+    "meanLatency": 88170.41666666667,
+    "p95Latency": 161727,
+    "totalCostUSD": 0.00003101506878620975,
+    "meanCostUSD": 0.000003876883598276218,
+    "costPerProvider": {
+      "ollama-phi3-mini": 0.00000648083755305228,
+      "ollama-llama3-8b": 0.000024534231233157465
+    }
+  },
+  "all": [
+    {
+      "group": "TEXT_SMALL",
+      "provider": "ollama-phi3-mini",
+      "latencyMs": 26694,
+      "success": true,
+      "costEstimate": {
+        "inputTokens": 5,
+        "outputTokens": 1,
+        "inputCostUSD": 7.198209228515673e-7,
+        "outputCostUSD": 5.758567382812538e-7,
+        "fixedFeeUSD": 0,
+        "totalUSD": 0.000001295677661132821,
+        "simulatedModelName": "gpt-4o-mini"
+      }
+    },
+    {
+      "group": "TEXT_SMALL",
+      "provider": "ollama-phi3-mini",
+      "latencyMs": 35591,
+      "success": true,
+      "costEstimate": {
+        "inputTokens": 8,
+        "outputTokens": 2,
+        "inputCostUSD": 0.0000012268844654845426,
+        "outputCostUSD": 0.0000012268844654845426,
+        "fixedFeeUSD": 0,
+        "totalUSD": 0.000002453768930969085,
+        "simulatedModelName": "gpt-4o-mini"
+      }
+    },
+    {
+      "group": "TEXT_SMALL",
+      "provider": "ollama-phi3-mini",
+      "latencyMs": 15552,
+      "success": true,
+      "costEstimate": {
+        "inputTokens": 10,
+        "outputTokens": 2,
+        "inputCostUSD": 0.0000015174394227502075,
+        "outputCostUSD": 0.000001213951538200166,
+        "fixedFeeUSD": 0,
+        "totalUSD": 0.0000027313909609503736,
+        "simulatedModelName": "gpt-4o-mini"
+      }
+    },
+    {
+      "group": "TEXT_LARGE",
+      "provider": "ollama-llama3-8b",
+      "latencyMs": 57642,
+      "success": false,
+      "costEstimate": {
+        "inputTokens": 21,
+        "outputTokens": 5,
+        "inputCostUSD": 0.000003243262179725846,
+        "outputCostUSD": 0.0000030888211235484242,
+        "fixedFeeUSD": 0,
+        "totalUSD": 0.00000633208330327427,
+        "simulatedModelName": "gpt-4o-mini"
+      }
+    },
+    {
+      "group": "TEXT_LARGE",
+      "provider": "error",
+      "latencyMs": 600046,
+      "success": false
+    },
+    {
+      "group": "OBJECT_SMALL",
+      "provider": "ollama-llama3-8b",
+      "latencyMs": 23156,
+      "success": true,
+      "jsonValid": true,
+      "costEstimate": {
+        "inputTokens": 14,
+        "outputTokens": 3,
+        "inputCostUSD": 0.0000021273480990891337,
+        "outputCostUSD": 0.0000018234412277906863,
+        "fixedFeeUSD": 0,
+        "totalUSD": 0.000003950789326879821,
+        "simulatedModelName": "gpt-4o-mini"
+      }
+    },
+    {
+      "group": "OBJECT_SMALL",
+      "provider": "ollama-llama3-8b",
+      "latencyMs": 16917,
+      "success": false,
+      "jsonValid": false,
+      "costEstimate": {
+        "inputTokens": 15,
+        "outputTokens": 3,
+        "inputCostUSD": 0.0000023032330280419334,
+        "outputCostUSD": 0.0000018425864224335469,
+        "fixedFeeUSD": 0,
+        "totalUSD": 0.00000414581945047548,
+        "simulatedModelName": "gpt-4o-mini"
+      }
+    },
+    {
+      "group": "OBJECT_LARGE",
+      "provider": "ollama-llama3-8b",
+      "latencyMs": 112274,
+      "success": false,
+      "jsonValid": false,
+      "costEstimate": {
+        "inputTokens": 19,
+        "outputTokens": 4,
+        "inputCostUSD": 0.0000027497614790865355,
+        "outputCostUSD": 0.000002315588613967609,
+        "fixedFeeUSD": 0,
+        "totalUSD": 0.000005065350093054144,
+        "simulatedModelName": "gpt-4o-mini"
+      }
+    },
+    {
+      "group": "OBJECT_LARGE",
+      "provider": "ollama-llama3-8b",
+      "latencyMs": 161727,
+      "success": false,
+      "jsonValid": false,
+      "costEstimate": {
+        "inputTokens": 17,
+        "outputTokens": 4,
+        "inputCostUSD": 0.0000025964610306379936,
+        "outputCostUSD": 0.0000024437280288357585,
+        "fixedFeeUSD": 0,
+        "totalUSD": 0.000005040189059473752,
+        "simulatedModelName": "gpt-4o-mini"
+      }
+    },
+    {
+      "group": "TEXT_EMBEDDING",
+      "provider": "ollama-nomic-embed-text",
+      "latencyMs": 5204,
+      "success": true
+    },
+    {
+      "group": "TEXT_EMBEDDING",
+      "provider": "ollama-all-minilm",
+      "latencyMs": 3145,
+      "success": true
+    },
+    {
+      "group": "TEXT_EMBEDDING",
+      "provider": "ollama-all-minilm",
+      "latencyMs": 97,
+      "success": true
+    }
+  ],
+  "budgetStatus": {
+    "totalBudget": 1,
+    "spent": 0.00003101506878620975,
+    "remaining": 0.9999689849312138,
+    "utilizationRatio": 0.00003101506878620975
+  },
+  "costSummary": {
+    "totalSpent": 0.00003101506878620975,
+    "remainingBudget": 0.9999689849312138,
+    "utilizationRatio": 0.00003101506878620975
+  }
+}

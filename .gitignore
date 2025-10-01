@@ -1,0 +1,32 @@
+# Node / TypeScript
+node_modules/
+dist/
+coverage/
+.vitest/
+.cache/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env / Secrets
+.env
+.env.*
+!.env.example
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.tsbuildinfo
+
+# Bench outputs (keep curated MDs, ignore heavy JSON by default)
+results/**/*.json
+# If you want to keep a few small samples, unignore them explicitly:
+# !results/quick-*.json
+
+# Misc
+*.pid
+*.seed

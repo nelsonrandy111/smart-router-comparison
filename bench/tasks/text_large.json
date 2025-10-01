@@ -1,0 +1,4 @@
+[
+  { "prompt": "Summarize the following article about AI governance... [long text placeholder]", "minChars": 200 },
+  { "prompt": "Write a 3-paragraph plan to improve community health... [long text placeholder]", "minChars": 250 }
+]

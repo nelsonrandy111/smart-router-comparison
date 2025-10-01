@@ -1,0 +1,11 @@
+{
+  "schema": {
+    "type": "object",
+    "properties": { "title": {"type": "string"}, "tags": {"type": "array"} },
+    "required": ["title", "tags"]
+  },
+  "prompts": [
+    "Return a JSON with title and 3 tags about recycling.",
+    "Return a JSON with title and 3 tags about air quality."
+  ]
+}

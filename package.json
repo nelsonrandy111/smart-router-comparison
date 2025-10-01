@@ -1,0 +1,38 @@
+{
+  "name": "smart-router",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "bench:baseline": "tsx src/bench/runner.ts --mode=baseline --out results/baseline.json",
+    "bench:smart": "tsx src/bench/runner.ts --mode=smart --out results/smart.json",
+    "bench:report": "tsx src/bench/report.ts results/baseline.json results/smart.json results/report.md",
+    "bench:comprehensive": "tsx src/bench/run-comprehensive-benchmark.ts",
+    "bench:cost-aware": "tsx src/bench/run-comprehensive-benchmark.ts",
+    "bench:quick": "tsx src/quick-benchmark-runner.ts",
+    "bench:comparison": "tsx src/main-benchmark-runner.ts",
+    "bench:full": "tsx src/main-benchmark-runner.ts",
+    "bench:elizaos": "tsx src/baseline/elizaos-baseline.ts",
+    "bench:statistical": "tsx src/comparison/statistical-analysis.ts",
+    "bench:cost-analysis": "tsx src/comparison/cost-comparison.ts",
+    "dashboard:generate": "tsx src/bench/generate-dashboard-data.ts",
+    "dashboard:serve": "python -m http.server 8000",
+    "dashboard:full": "npm run dashboard:generate && npm run dashboard:serve"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "axios": "^1.7.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3",
+    "tsx": "^4.16.5",
+    "vitest": "^1.6.0"
+  }
+}
